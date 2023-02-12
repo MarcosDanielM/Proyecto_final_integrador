@@ -1,0 +1,141 @@
+* {
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.card1, .card2 {   
+   padding: 20px;
+   background-color:rgb(230, 230, 230);
+   border-radius: 5px;
+   box-shadow: 10px 10px 5px #888888;
+}
+
+i,.fecha {
+   color: #056b6b;
+   padding: 15px 0px;
+
+}
+
+
+/*--------------------columna1-------------------*/
+.card1 {
+    margin: 20px 10px 20px 20px; 
+ }
+ 
+.column1 {
+    width: 33%;
+}
+
+.data {
+    padding: 10px 0px;
+}
+
+.img_perfil {
+    position: relative;
+    padding: -20px;
+    margin: -20px; 
+    background-image: url("img/foto-perfil.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    padding: 0px 0px 20px 20px;
+    color: black;
+}
+ 
+
+h1 {
+    position: relative;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3, h2, p {
+    color: rgb(85, 85, 85);
+}
+
+h4 {
+    padding: 10px 0px;
+}
+
+
+.datos_personales {
+    margin: 20px 0px 0px 0px;
+}
+
+/*--------------------columna2-------------------*/
+.card2 {
+    margin: 20px 20px 20px 10px; 
+ }
+ 
+.column2 {
+    width: 67%;
+}
+
+.exper{
+    padding: 20px;
+}
+
+
+.divider {
+    border-top: 1px solid rgb(204, 204, 204);
+    margin: 20px auto;
+    width: 90%;
+  }
+
+.actual {
+   background-color: #056b6b;
+   border-radius: 5px;
+   color:aliceblue;
+   padding: 5px;   
+}
+
+/*-------------------Footer------------------*/
+
+footer{
+    /*margin: auto;*/
+    background-color: #056b6b;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes_sociales{
+    padding: 15px 0px 15px 0px;
+    color:aliceblue;
+    font-size: 1rem;
+}
+
+a {
+    font-size: 2em;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+a > i {
+     color: aliceblue;    
+}
+
+a> i:link {
+    color: #0e8668;
+  }
+  
+  a > i:hover {
+    color: #4d683d;
+  }
