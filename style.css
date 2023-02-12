@@ -27,6 +27,9 @@ i,.fecha {
 
 }
 
+.fa-solid, .fa-regular {
+    margin-right: 10px;
+}
 
 /*--------------------columna1-------------------*/
 .card1 {
@@ -54,6 +57,7 @@ i,.fecha {
     align-items: left;
     padding: 0px 0px 20px 20px;
     color: black;
+    border-radius: 5px 5px 0px 0px;
 }
  
 
@@ -73,7 +77,9 @@ h4 {
     padding: 10px 0px;
 }
 
-
+.about {
+    text-align: justify;
+}
 .datos_personales {
     margin: 20px 0px 0px 0px;
 }
@@ -104,6 +110,20 @@ h4 {
    color:aliceblue;
    padding: 5px;   
 }
+
+.progress-bar {
+    width: 90%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 30px;
+  }
+  
+  .progress {
+    width: 20%;
+    height: 100%;
+    background-color: #056b6b;
+    border-radius: 30px;
+  }
 
 /*-------------------Footer------------------*/
 
