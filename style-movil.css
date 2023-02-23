@@ -1,0 +1,377 @@
+/* ------------  Media Query para la pantalla de celulares -------------- */
+/*@media only screen and (max-width: 700px)*/
+
+/* General*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    /*Light mode*/
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+.dark-mode {
+    /* Dark mode */
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 0px black;
+}
+
+.container {
+    padding: 0.8rem;
+    width: 100%;
+} 
+
+.box {
+    margin: 1rem 0px;
+    padding: 3rem 1rem;
+    width: 100%;
+    height: 50rem;
+}
+ 
+
+.divider {
+    border-top: 1px solid rgb(204, 204, 204);
+    margin: 1rem auto;
+    width: 90%;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Nav Bar */
+
+
+#navbar_pc{
+    display: none;
+}
+
+
+#navbar_mv { 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    transition: top 0.3s;
+    top: 0px;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li_movil {
+    display: inline;
+}
+
+li a {
+    float: left;
+    display: block;
+    color: #056b6b; 
+    text-align: center;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    width: 20%;
+}
+ 
+li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    width: 20%;
+} 
+
+li a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+/* Imagen perfil */
+
+.img_main, #img_main {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+h1, .title {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+ 
+#aboutMe {
+    display: none;
+}
+
+#btnsobreMi {
+    display: block;
+}
+
+#sobreMi {
+    display: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none;  
+    position: fixed;  
+    z-index: 1;  
+    padding-top: 60%;  
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1.5rem;
+    border: 1px solid #888;
+    width: 80%;
+    
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Skills */
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+.progress {
+    height: 100%;
+    background-color: #056b6b;
+    border-radius: 30px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.lenguaje {
+    padding-top: 2rem;
+}
+
+
+
+/* Experiencia */
+
+
+i, #mode_off {
+    color: #056b6b; 
+ }
+ 
+ .fecha {
+    color:white;
+ }
+
+.fa-calendar-days {
+    color:#dddddd;
+}
+
+ /*Eduacion */
+ 
+ .collapsible {
+    background-color: #056b6b;
+    color: white;
+    cursor: pointer;
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 0.5rem 0;
+    box-shadow: 5px 5px 5px #888888;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #485e5e;
+  }
+  
+  .content {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+.greencollapsible {
+    background-color: #056b6b;
+}
+
+.lang_pc {
+    display: none;
+}
+  
+/*formulario contacto*/
+   
+.about {
+    margin: 20px 0px;
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 1.2rem;
+    color: white;
+}
+
+.about_dark-mode {
+    /* Dark mode */
+    color: black; 
+}
+
+#reemplazo {
+    display: block;
+}
+
+form {
+    margin: 20px auto;
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #056b6b;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.button-dark-mode {
+    box-shadow: 0px 0px 0px black;
+}
+#openFormBtn {
+    display: block;  
+    margin: 0 auto; 
+}
+
+.contacto {
+    padding:  0.6rem 0;
+    text-align: center;
+}
+ 
+.data_movil {
+    padding: 0rem 0;
+} 
+
+.separator {
+    margin: 3rem auto;
+
+}
+
+.cancel {
+    text-align: center;
+}
+
+ 
+/* Footer */
+
+footer {
+    margin-top: 10rem;
+    width: 100%;
+    height: 13rem;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    padding-left: 2rem;
+}
+
+  
+footer a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    justify-content: center;
+    color: #056b6b;
+}
+
+.redes_sociales {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#darkbtn {
+    color:white;   
+    border-radius: 50%;
+}
+
+#temapc {
+    display: none;
+}
+
+.findMe {
+    display: none;
+}
+
+
+
+#mode_on {
+    display: inline-block;
+}
+
+#mode_on {
+    color:white;
+    display: none;
+}
+

@@ -5,264 +5,460 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio web</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-movil.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="style-desktop.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
+    <!--Barra de Navegación-->
 
-        <main class="card1 column1">
+    <!--Version Movil-->
+    <nav id="navbar_mv">
+        <ul>   
+            <li class="li_movil">
+                <a href="#" id="btnhome">
+                    <i class="fas fa-house"></i>
+                </a>
+            </li>
 
-            <div class="img_perfil">
-                <h1>
-                    <i class="fas fa-user"></i>Nicolas Maldonado
-                </h1>
+            <li class="li_movil">
+                <a href="#habilidades"><i class="fas fa-star-of-life"></i></a>
+            </li>
+
+            <li class="li_movil">
+                <a href="#experiencias">
+                    <i class="fa-sharp fa-solid fa-briefcase"></i>
+                </a>
+            </li>
+
+            <li class="li_movil">
+                <a href="#educacion"><i class="fa-solid fa-book"></i></a>
+            </li>
+
+            <li class="li_movil">
+                <a href="#contacto"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+        </ul>
+        
+    </nav>
+   
+    <!--Version Dekstop-->
+    <nav id="navbar_pc">
+        
+        <ul>   
+            
+             <li>
+                <a href="#" id="btnhomepc"><i  class="fas fa-house"></i> Home</a>
+
+            </li>
+
+             <li>
+                <a href="#sobreMi"><i class="fa-solid fa-user"></i> Sobre mi</a>
+            </li>
+
+             <li>
+                <a href="#habilidades"><i class="fas fa-star-of-life"></i> Habilidades</a>
+            </li>
+
+            <li>
+                <a href="#experiencias"><i class="fa-sharp fa-solid fa-briefcase"></i> Experiencias</a>
+            </li>
+
+             <li>
+                <a href="#educacion"><i class="fa-solid fa-book"></i> Educacion</a>
+            </li>
+
+             <li>
+                <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            </li>
+            
+        </ul> 
+        <div class="button-container" id="temapc">
+            <button type="button" id="darkbtnPc" onclick="functionTheme()">
+                <span class="fas fa-adjust" id="mode_onPc"> Tema</span>
+                <span class="fas fa-adjust" id="mode_offPc"> Tema</span>
+            </button>   
+        </div>
+    </nav>
+
+     
+
+
+    <!--Main -->
+
+    <main class="container" >
+        <div id="img_movil">
+            <div class="box_main" > 
+                <h1 class="name">Nicolas Maldonado</h1>
+
+                <h3 class="title">Web Designer</h3>
+                <img id="img_main" class="img_main" src="img/foto-perfil.jpg" alt="Imagen de perfil"/> 
+              
+              
+           </div>
+        </div>
+
+        <section class="seccion box btnsobreMi" >
+            <button type="button" id="btnsobreMi" class="btns button">Sobre mi</button>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <div class="about" > 
+                    <p> Hola, soy Nicolas Leonardo Maldonado. Mi experiencia profesional en el área del diseño 
+                        me ha llevado a lugares inpensados. Con cada desafio, he logrado recopilar un nuevo 
+                        aprendizaje permitiendome mejorar mis habilidades y logrando que siga desarrollandome 
+                        como persona. Lo que más me gusta del diseño es que puedo dejar volar mi imaginación 
+                        expandiendo mi mente.
+                    </p>
+                    
+                </div>
             </div>
+        </section> 
+        <section class="seccion box" id="img_principal">
+            <div class="box_main"> 
+                <img class="img_main" src="img/foto-perfil.jpg" alt="Imagen de perfil"/> 
 
+                <h1 class="name">Nicolas Maldonado</h1>
+                <h3 class="title">Web Designer</h3>              
             
-
-            <article class="datos">
-                          
-                <div class="datos_personales">
+                <div class="redes_sociales" id="redes2">
+                    <a href="https://es-la.facebook.com/" target="_blank" class="fa-brands fa-square-facebook"></a>
+           
+                    <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
             
-                    
-                    <p class="data">
-                        <i class="fa-sharp fa-solid fa-briefcase"></i>  Diseñador
-                    </p>
-                    <p class="data">
-                        <i class="fa-solid fa-house"></i> Córdoba, Argentina
-                    </p>
-                    <p class="data">
-                        <i class="fa-sharp fa-solid fa-envelope"></i> mymail@email.com
-                    </p>
-                    <p class="data">
-                        <i class="fa-solid fa-phone"></i> 351-2345678
-                    </p>
+                    <a href="https://ar.pinterest.com/" target="_blank" class="fa-brands fa-pinterest"></a>
+            
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="fa-brands fa-square-twitter"></a>
 
-                    <hr class="divider">
+                    <a href="https://linkedin.com/" target="_blank" class="fa-brands fa-linkedin"></a>
 
+                </div>
+            </div>
+        </section>
+         
+        <section class="seccion box" id="sobreMi">
+            <h2>Acerca de Mí</h2>
+            <div class="row">
+                <div class="col col1">
+                    <div id="about"> 
+                        <p> Hola, soy Nicolas Leonardo Maldonado. Mi experiencia profesional en el área del diseño 
+                            me ha llevado a lugares inpensados. Con cada desafio, he logrado recopilar un nuevo 
+                            aprendizaje permitiendome mejorar mis habilidades y logrando que siga desarrollandome 
+                            como persona. Lo que más me gusta del diseño es que puedo dejar volar mi imaginación 
+                            expandiendo mi mente.
+                        </p>
+                        <div class="container-img">
+                            <img id="imgAbout" class="img_main" src="img/foto-perfil.jpg" alt="Imagen de perfil"/>
+                        </div> 
 
+                    </div> 
+                </div>
 
-                    <h4><button class="btn-about" id="toggleBtn" >Más sobre mi...</button></h4>
-                    
+                <div class="col col2">
+                    <div class="info">
+                        <h3>Información</h3>
+                        
+                        <p class="data2">
+                            <i class="fas fa-user"></i>  Nicolas Maldonado
+                        </p>
+                        
+                        <p>Ubicación</p>
+                        <p class="data2">
+                            <i class="fa-solid fa-house"></i> Córdoba, Argentina
+                        </p>
+                        <p>E-mail</p>
+                        <p class="data2">
+                            <i class="fa-sharp fa-solid fa-envelope"></i> mymail@email.com
+                        </p>
+                        <p>Teléfono</p>
+                        <p class="data2">
+                            <i class="fa-solid fa-phone"></i> 351-2345678
+                        </p>
 
-                          <p class="about" id="text">
-                            Hola, soy Nicolas Leonardo Maldonado. Mi experiencia profesional en el área del diseño me ha
-                            llevado a lugares inpensados. Con cada desafio, he logrado recopilar un nuevo aprendizaje permitiendome 
-                            mejorar mis habilidades y logrando que siga desarrollandome como persona. Lo que más me gusta del diseño 
-                            es que puedo dejar volar mi imaginación expandiendo mi mente.
-                      
-                          </p>
+                    </div>
+
+                    <div class="star">
+                        <h3 class="experiencia">
+                            <i class="fa-solid fa-star"></i> Mas de diez años de experiencia desarrollando proyectos novedosos
+                        </h3>                          
+                    </div>
+                   
+                </div>
+              
+            </div>
+        </section>
+
+        <section class="seccion box" id="habilidades">
+            <div class="skills">
+                     <h2>
+                         <i class="fa-solid fa-star-of-life"></i> Skills
+                     </h2>
+                     <p class="data">
+                         <i class="fa-solid fa-circle-half-stroke"></i> Adobe Photoshop
+                         <div class="progress-bar">
+                             <div class="progress adobe">85%</div>
+                         </div>
+                     </p>
+                     <p class="data">
+                         <i class="fa-solid fa-camera"></i> Photography
+                         <div class="progress-bar">
+                             <div class="progress photo">70%</div>
+                         </div>
+                     </p>
+                     <p class="data">
+                         <i class="fa-solid fa-bezier-curve"></i> Illustrator
+                         <div class="progress-bar">
+                             <div class="progress illust">65%</div>
+                         </div>
+                     </p>
+                     <p class="data">
+                         <i class="fa-solid fa-photo-film"></i> Media
+                         <div class="progress-bar">
+                             <div class="progress media">65%</div>
+                         </div>
+                     </p>
+     
+             </div>
+             
+             <div class="lenguaje">
+                 <h3>
+                     <i class="fa-solid fa-earth-americas"></i> Idiomas
+                 </h3>
+                 
+                 <p class="data_movil">
+                     <i class="fa-solid fa-language"></i> Español C2 
+                 </p>
+ 
+                 <p class="data_movil">
+                     <i class="fa-solid fa-language"></i> Inglés B2
+                 </p>
                      
-                </div>     
-            </article>
+                 <p class="data_movil">
+                     <i class="fa-solid fa-language"></i> Japonés B1
+                 </p>
+             </div>
+         </section>
 
-            <hr class="divider">
+         <!--Experiencias--> 
 
-            <article class="skills">
-                <h3>
-                    <i class="fa-solid fa-star-of-life"></i> Skills
-                </h3>
-                <p class="data">
-                    <i class="fa-solid fa-circle-half-stroke"></i> Adobe Photoshop
-                    <div class="progress-bar">
-                        <div class="progress adobe">85%</div>
-                    </div>
-                </p>
-                <p class="data">
-                    <i class="fa-solid fa-camera"></i> Photography
-                    <div class="progress-bar">
-                        <div class="progress photo">70%</div>
-                    </div>
-                </p>
-                <p class="data">
-                    <i class="fa-solid fa-bezier-curve"></i> Illustrator
-                    <div class="progress-bar">
-                        <div class="progress illust">65%</div>
-                    </div>
-                </p>
-                <p class="data">
-                    <i class="fa-solid fa-photo-film"></i> Media
-                    <div class="progress-bar">
-                        <div class="progress media">65%</div>
-                    </div>
-                </p>
+         <section class="seccion box"  id="experiencias">
+            <div class="card2"> 
+                 <h2 class="title2">
+                     <i class="fa-solid fa-briefcase"></i>  
+                     Experiencia Laboral
+                 </h2>
+ 
+                 <button class="collapsible btns">
+                     <h3>mercadolibre.com</h3>
+                     <span class="fecha">
+                         <i class="fa-regular fa-calendar-days"></i> 
+                         Ene 2020 - <span class="actual">Actual</span>
+                     </span>
+                 </button>
+                 
+                 <div class="content exper" id="exd1">
+                     <h3>Front End Developer</h3>
+                     <p>Mantener y obtimizar el sitio web. Asegurar la accessibilidad de la web.
+                        Desarrollo HTML, CSS y JS.
+                     </p>
+                 </div>
+ 
+                 <button class="collapsible btns" >
+                     <h3>cordiez.com</h3>
+                         <span class="fecha">
+                             <i class="fa-regular fa-calendar-days"></i>
+                             Mar 2017 - Abr 2019
+                         </span>
+                 </button>
+                 
+                 <div class="content exper" id="exd1">
+                     <h3>Web Developer</h3>
+                     <p>Crear el sitio de compras a través de código complejo HTML, CSS y JS.
+                     </p>
+                 </div>
+                 
+                 <button class="collapsible btns">
+                     <h3>liberocamisetas.com</h3>
+                     <span class="fecha">
+                         <i class="fa-regular fa-calendar-days"></i>
+                         Ene 2015 - Dic 2016
+                     </span>
+                 </button>
+                 
+                 <div class="content exper" id="exd1">
+                     <h3>Graphic Designer</h3>
+                     <p>Mi función principal era crear la imagen y el estilo estético de la empresa.
+                     </p>
+                 </div>
+                  
+ 
+                 <button class="collapsible btns">
+                     <h3>somethings.com</h3>
+                     <span class="fecha">
+                         <i class="fa-regular fa-calendar-days"></i>
+                         Sep 2013 - Dic 2014
+                     </span>
+                 </button>
+                 
+                 <div class="content exper" id="exd1">
+                     <h3>Graphic Designer</h3>
+                     <p>Encargado de transmitir el mensaje de la empresa mediante la comunicación visual.
+                     </p>
+                 </div>
+            </div>
+         </section>
+ 
+         
+         <!--Educacion-->
 
-            </article>
-
-            <hr class="divider">
-
-            <article class="lenguaje">
-                <h3>
-                    <i class="fa-solid fa-earth-americas"></i> Idiomas
-                </h3>
-                <p class="data">
-                    <i class="fa-solid fa-language"></i> Español
-                    <div class="progress-bar">
-                        <div class="progress esp"></div>
-                    </div>
-                </p>
-                <p class="data">
-                    <i class="fa-solid fa-language"></i> Inglés
-                    <div class="progress-bar">
-                        <div class="progress eng"></div>
-                    </div>
-                </p>
-                <p class="data">
-                    <i class="fa-solid fa-language"></i> Japonés
-                    <div class="progress-bar">
-                        <div class="progress jpn"></div>
-                    </div>
-                </p>
-            </article>
-
-        </main>
-
-        <aside class="column2" id="textTrans">
-
-            <article class="card2 aside">
-
-                <h2 class="title2">
-                    <i class="fa-solid fa-briefcase"></i>  
-                    Experiencia Laboral
-                </h2>
-
-                <div class="exper"  id="exd1">
-                    <h3>Front End Developer / mercadolibre.com</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i> 
-                        Ene 2020 - <span class="actual">Actual</span>
-                    </span>
-                </div>    
-
-                <hr class="divider">
-
-                <div class="exper"  id="exd2">
-                    <h3>Web Developer / cordiez.com</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        Mar 2017 - Abr 2019
-                    </span>
-                </div> 
-
-                <hr class="divider">
-
-                <div class="exper"  id="exd3">
-                    <h3>Graphic Designer / liberocamisetas.com</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        Ene 2015 - Dic 2016
-                    </span>
-                </div> 
-
-                <hr class="divider">
-
-                <div class="exper" id="exd4">
-                    <h3>Graphic Designer / somethings.com</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        Jun 2014 - Dic 2014
-                    </span>
-                </div>  
-
-            </article>
-      
-            <article class="card2 aside">
-                <h2 class="title2">
-                    <i class="fa-solid fa-book"></i>  
-                    Educación 
-                </h2>
-                <div class="exper">
-
-                    <h3>Coder House</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        Mar 2017 - Ago 2017
-                    </span>
-                        <p>Curso de Fundamentos del Diseño Gráfico</p>
+         <section class="seccion box" id="educacion">
+ 
+             <div class="card2">
+                 <h2 class="title2">
+                     <i class="fa-solid fa-book"></i>  
+                     Educación 
+                 </h2>
+ 
+                 <button class="collapsible btns btns" >
+                     <h3>Coder House</h3>
+                     <span class="fecha">
+                         <i class="fa-regular fa-calendar-days"></i>
+                         Mar 2017 - Ago 2017
+                     </span>
+                 </button>
+                 <div class="content exper">
+                     <h3>Curso de Fundamentos del Diseño Gráfico</h3>
+                     <p>En este curso pude conocer los conceptos básicos del diseño: nociones centrales sobre 
+                         el color, la forma, las leyes de percepción de la Gestalt y el uso de tipografía. 
+                         Obtuve todas las herramientas para abordar el diseño de cualquier propuesta gráfica.
+                      </p>
+                 </div>
+ 
+                 <button class="collapsible btns">
+                     <h3>Mariano Moreno</h3>
+                     <span class="fecha">
+                         <i class="fa-regular fa-calendar-days"></i>
+                         Feb 2012 - Abr 2012
+                     </span>
+                 </button>
+                 <div class="content exper">
+                     <h3>Curso de fotografia</h3>
                     
-                </div> 
-
-                <div class="exper">
-                    <h3>Mariano Moreno</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        Feb 2012 - Abr 2012
-                    </span>
-                    <p> Curso de fotografia</p>
-                    
-                </div> 
-
-                <div class="exper">
-                    <h3>Universidad Siglo 21</h3>
-                    <span class="fecha">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        Jun 2008 - Dic 2011
-                    </span>
-                    <p> Licenciatura en Diseño Gráfico</p>
-                    
-                </div>  
-
-            </article>
-
-            <article  class="card2 aside">
-                <h2 class="title2">
-                    <i class="fas fa-envelope"></i> Contacto                    
-                </h2>
-
-                <h3 class="contacto">¿Tenes algo maravilloso en mente? </h3>
-                
-                <p class="contacto">Contáctame asi lo hacemos realidad</p> 
+                     <p>Con las herramientas aprendidas durante el taller pude obtener la foto deseada y 
+                        conocer la técnica fotográfica. Aprendrendi a operar la cámara y explorar sus 
+                        posibilidades de controles creativos que se pueden ejercer sobre la imagen.
+                     </p>
+                 </div>
+ 
+                 <button class="collapsible btns">
+                     <h3>Universidad Siglo 21</h3>
+                     <span class="fecha">
+                         <i class="fa-regular fa-calendar-days"></i>
+                         Jun 2008 - Dic 2011
+                     </span> 
+                 </button>
+                 <div class="content exper">
+                     <h3> Licenciatura en Diseño Gráfico</h3>
+ 
+                     <p>Esta carrera me brindó la capacidad de elaborar estrategias comunicacionales exitosas, 
+                         obtener habilidades técnicas y un desarrollo creativo que me permite ser un profesional 
+                         dinámico y necesario para cada momento en que la imagen de empresas y organizaciones esté 
+                         en juego.
+                      </p>
+                 </div> 
+             </div>
+         </div>
                
-                <button id="openFormBtn">Contactame </button>
-                
-                <form id="myForm" action="#">
-
-                    
-                    <input type="email" id="name" name="name" placeholder="Nombre"/>
-
-                    
-                    <input type="email" id="email" name="email" placeholder="Email"/>
-                    
-                    
-                    <input type="text"  id="asunto" name="asunto" placeholder="Asunto"/>
-                    
-                    
-                    <textarea rows="10" id="comment" placeholder="Tu mensaje..."></textarea>
-                    
-                    <button type="submit" id="contact">Enviar mensaje</button>
-                </form>
-
-            </article>
+         </section>
+         
+         
+         
+         <section class="seccion box" id="contacto">
+         <div class="card2">
+ 
+             <h2 class="title2">
+                 <i class="fas fa-envelope"></i> Contacto                    
+             </h2>
+             
+             <div id="reemplazo">
+             
+             <p class="data">
+                 <i class="fas fa-user"></i>  Nicolas Maldonado
+             </p>
+             <p class="data">
+                 <i class="fa-solid fa-house"></i> Córdoba, Argentina
+             </p>
+             <p class="data">
+                 <i class="fa-sharp fa-solid fa-envelope"></i> mymail@email.com
+             </p>
+             <p class="data">
+                 <i class="fa-solid fa-phone"></i> 351-2345678
+             </p>
+                <div class="contactop">
+                    <h3 class="contacto">¿Tenes algo maravilloso en mente? </h3>
+             
+                    <p class="contacto">Contáctame asi lo hacemos realidad</p> 
             
-        </aside>  
+                    <button type="button" class="btns" id="openFormBtn">Contactame</button>
+                </div>
+            </div>
+            <form id="myForm" action="/action_page.php" method="get">
+                 
+                 <input type="email" id="name" name="name" placeholder="Nombre"/>
+ 
+                 
+                 <input type="email" id="email" name="email" placeholder="Email"/>
+                 
+                 
+                 <input type="text"  id="asunto" name="asunto" placeholder="Asunto"/>
+                 
+                 
+                 <textarea rows="10" id="comment" placeholder="Tu mensaje..."></textarea>
+                 
+                 <button class="btns" type="submit" id="contact">Enviar mensaje</button>
+ 
+                 <p class="cancel"><button class="btns" type="button" id="cancel">Cancelar</button></p>
+             </form>
+ 
+         </div>
+         </section>
+ 
+         <hr class="separator">
 
-    </div>
-    <footer>
-            <p class="redes_sociales">Encontrame en mis redes sociales.</p> 
-           
-            <a href="#">
-                <i class="fa-brands fa-square-facebook"></i>
-            </a>
-           
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            
-            <a href="#">
-                <i class="fa-brands fa-pinterest"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-square-twitter"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            
-    </footer>
+     </main>
+      
+     <footer>
+ 
+            <div id="darkbtn" onclick="functionTheme()">
+                <span id="temamovil">
+                    <i class="fas fa-adjust"></i>
+                    <span id="mode_on">ON</span>
+                    <span id="mode_off">OFF</span>
+                </span>
+            </div>
+ 
+            <span class="findMe">
+                <h3>Encontrame en mis redes sociales.</h3>
+            </span> 
+        
+            <div class="redes_sociales" id="redes1">
+                <a href="https://es-la.facebook.com/" target="_blank" class="fa-brands fa-square-facebook"></a>
+       
+                <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+        
+                <a href="https://ar.pinterest.com/" target="_blank" class="fa-brands fa-pinterest"></a>
+        
+                <a href="https://twitter.com/?lang=es" target="_blank" class="fa-brands fa-square-twitter"></a>
 
-    <!--Scrips-->
-    <script src="https://kit.fontawesome.com/68c1c5e845.js" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-</body>
+                <a href="https://linkedin.com/" target="_blank" class="fa-brands fa-linkedin"></a>
+
+            </div>
+     </footer>
+
+ <!--Scrips-->
+ <script src="scripts.js"></script>
+ <script src="https://kit.fontawesome.com/68c1c5e845.js" crossorigin="anonymous"></script>
+ </body>
 </html>

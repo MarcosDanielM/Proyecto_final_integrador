@@ -1,0 +1,358 @@
+/* ------------  Media Query para la pantalla de Deckstop -------------- */
+
+/* General*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color:rgb(230, 230, 230);
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white; 
+}
+
+/*Contiene el la columna  la derecha*/ 
+
+.container, footer {
+	margin-left: 14rem; /*Ancho del contenedor Main*/
+  padding: 0 1rem 1rem 1rem;
+} 
+
+
+/* Display None Movil*/
+ 
+#navbar_mv{
+  display: none;
+}
+
+#img_movil {
+  display: none;
+}
+
+.btnsobreMi {
+  display: none;
+}
+
+#temamovil {
+  display: none;
+}
+
+
+/* Nav Bar */
+
+#img_home {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem;
+  width: 15rem;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-color: #056b6b;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+
+li a:hover {
+  background-color: #000;
+  color: white;
+}
+
+ 
+.button-container { 
+  width: 100%;
+  height: auto; 
+  position: fixed;
+  padding: 2rem; 
+}
+ 
+button {
+  padding: 10px 20px;
+  background-color: #056b6b;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.button-dark-mode {
+  box-shadow: 0px 0px 0px black;
+}
+
+.mode_onPc {
+  display: inline-block;
+}
+
+#darkbtnPc {
+  font-size: 0.5rem;
+  background-color: #056b6b;
+  border: 1px solid white;
+}
+
+#mode_offPc {
+  color:black;
+}
+
+#mode_onPc{
+  color:white;
+  display: none;
+} 
+
+#navbar_pc i {
+  color: #fff;
+}
+
+/* Main */
+
+.box { /*seccion*/
+  margin: 20px 10px; 
+  padding: 20px;
+  width: 100%;
+  height: 700px;
+}
+
+#img_principal {
+  padding: 3rem;
+  margin-top: 0rem;
+}
+
+/*About*/
+.name, .title {
+  text-align: center;
+}
+.name {
+  font-size: 3rem;
+}
+
+ 
+.img_main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 18rem; 
+  height: 18rem;
+}
+
+.box_main {
+  text-align: center;
+}
+
+#redes2 a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  padding: -1px 0px;
+  border-radius: 3px;
+  color: #056b6b;
+  text-align: center;
+  justify-content: center;
+}
+
+#redes2 a:hover {
+  color: #7cebeb;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.experiencia {
+  text-align: center;
+}
+
+.info {
+  margin: 0 2rem;
+}
+
+
+#imgAbout {
+  border-radius: 15px;
+  width: 10rem; 
+  height: 10rem;
+}
+
+#about {
+  text-align: justify;
+}
+
+.container-img {
+  margin-top: 2rem;
+}
+
+.data2 {
+  padding: 0 2rem;
+}
+
+.star {
+  margin-top: 5rem;
+}
+/* Habilidades*/
+
+.progress-bar {
+  width: 90%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #056b6b;
+  border-radius: 30px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.adobe{
+  width: 85%;
+}
+
+.photo  {
+  width: 70%;
+}
+
+.media, .illust {
+  width: 65%;
+}
+
+.lenguaje {
+  padding-top: 2rem;
+}
+
+
+/* Experiencias*/
+
+i {
+  color: #056b6b; 
+}
+
+.fecha {
+  color:white;
+}
+
+.fa-calendar-days {
+  color:#dddddd;
+}
+
+
+/* Collaps*/
+
+.collapsible {
+  background-color: #056b6b;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 0.5rem 0;
+}
+
+.active, .collapsible:hover {
+  background-color: #485e5e;
+}
+
+.content {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.greencollapsible {
+  background-color: #056b6b;
+}
+
+/* Contacto*/
+
+/* Form*/
+
+form {
+  margin: 20px auto;
+  display: none;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+ 
+.separator {
+  display: none;
+
+}
+
+.contactop {
+  margin-top: 5rem;
+}
+
+.contacto { 
+  padding:  0.4rem 0;
+  text-align: center;
+}
+
+#openFormBtn {
+  display: block;  
+  margin: 0 auto; 
+}
+
+/*Footer*/
+
+footer {
+  background-color: #056b6b;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+#redes1 a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
+}
+
+#redes1 a:hover {
+  color: #7cebeb;
+}
