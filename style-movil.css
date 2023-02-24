@@ -352,8 +352,13 @@ footer a {
 }
 
 #darkbtn {
-    color:white;   
-    border-radius: 50%;
+    color:white;  
+    width: 1rem;
+    height: 2rem;
+}
+
+#separaFoot {
+    margin: 5rem;
 }
 
 #temapc {
